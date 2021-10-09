@@ -56,6 +56,16 @@ const questions = [
     },
     {
         type: 'confirm',
+        name: 'usageConf',
+        message: 'Do you want to add usage information?',
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Add your usage information:',
+    },
+    {
+        type: 'confirm',
         name: 'contribConf',
         message: 'Do you want to add contribution instructions?'
     },
