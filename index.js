@@ -1,6 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const chalk = require('chalk');
+const gen = require('gen.js');
 
 const intro = [
     {
