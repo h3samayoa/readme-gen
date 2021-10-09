@@ -46,12 +46,12 @@ const questions = [
     },
     {
         type: 'confirm',
-        name: 'installConf',
+        name: 'install',
         message: 'Do you want to add installation instructions?'
     },
     {
         type: 'input',
-        name: 'install',
+        name: 'installConf',
         message: 'Add your installation instructions:',
         when: function (ans) {
             return ans.install;
@@ -59,12 +59,12 @@ const questions = [
     },
     {
         type: 'confirm',
-        name: 'usageConf',
+        name: 'usage',
         message: 'Do you want to add usage information?',
     },
     {
         type: 'input',
-        name: 'usage',
+        name: 'usageConf',
         message: 'Add your usage information:',
         when: function (ans) {
             return ans.usage;
@@ -77,7 +77,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contrib',
+        name: 'contribConf',
         message: 'Add how to contribute to your repo:',
         when: function (ans) {
             return ans.contrib;
@@ -85,12 +85,12 @@ const questions = [
     },
     {
         type: 'confirm',
-        name: 'testConf',
+        name: 'test',
         message: 'Do you want to add testing instructions?',
     },
     {
         type: 'input',
-        name: 'test',
+        name: 'testConf',
         message: 'Add your testing instructions:',
         when: function (ans) {
             return ans.test;

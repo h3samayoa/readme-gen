@@ -1,6 +1,3 @@
-const { table } = require("console");
-const { read } = require("fs");
-
 const gen = (data) => {
     //getting open source licenses from https://opensource.org/licenses
     // and badge from https://shields.io/
@@ -58,19 +55,19 @@ readme += `\n## Description\n${data.description}\n`;
 
 readme += tableOfContents;
 
-if (data.installConf) {
-    readme += `\n## Installation\n${data.install}\n`;
+if (data.install) {
+    readme += `\n## Installation\n${data.installConf}\n`;
 }
 
-if (data.usageConf) {
-    readme += `\n## Usage\n${data.usage}\n`;
+if (data.usage) {
+    readme += `\n## Usage\n${data.usageConf}\n`;
 }
 
-if (data.contribConf) {
-    readme += `\n## Contributing\n${data.contrib}\n`;
+if (data.contrib) {
+    readme += `\n## Contributing\n${data.contribConf}\n`;
 }
-if (data.testConf) {
-    readme += `\n## Testing\n${data.test}\n`;
+if (data.test) {
+    readme += `\n## Testing\n${data.testConf}\n`;
 }
 
 readme += `\n## License \nLicensed under the ${data.license} License. Copyright \u00A9 ${year.getFullYear()}\n`;
