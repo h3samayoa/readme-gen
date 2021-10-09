@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const chalk = require('chalk');
-const gen = require('gen.js');
+const gen = require('./gen.js');
 
 const intro = [
     {
@@ -114,7 +114,7 @@ const start = async() => {
     try {
         await inquirer.prompt(intro);
         const data = await inquirer.prompt(questions);
-        writeToFile('./output/README.md');
+        writeToFile('./output/README.md', gen(data));
     } catch (err) {
         console.log(err);
     }
