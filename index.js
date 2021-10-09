@@ -8,7 +8,7 @@ const intro = [
         type: 'confirm',
         prefix: '\b',
         name: 'intro',
-        message: chalk.magenta(`Welcome to my README Generator`)
+        message: chalk.magenta(`Welcome to my README Generator would you like to continue`)
     },
 ];
 
