@@ -54,7 +54,7 @@ let readme = `# ${data.title}\n`;
 
 readme += `\n${licenseBadge}\n\n---\n`;
 
-readme += `\n## Description\n${dat.description}\n`;
+readme += `\n## Description\n${data.description}\n`;
 
 readme += tableOfContents;
 
