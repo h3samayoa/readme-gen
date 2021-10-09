@@ -53,6 +53,9 @@ const questions = [
         type: 'input',
         name: 'install',
         message: 'Add your installation instructions:',
+        when: function (ans) {
+            return ans.install;
+        },
     },
     {
         type: 'confirm',
@@ -63,6 +66,9 @@ const questions = [
         type: 'input',
         name: 'usage',
         message: 'Add your usage information:',
+        when: function (ans) {
+            return ans.usage;
+        },
     },
     {
         type: 'confirm',
@@ -73,22 +79,28 @@ const questions = [
         type: 'input',
         name: 'contrib',
         message: 'Add how to contribute to your repo:',
+        when: function (ans) {
+            return ans.contrib;
+        },
     },
     {
         type: 'confirm',
         name: 'testConf',
-        message: 'Do you want to add testing instructions?'
+        message: 'Do you want to add testing instructions?',
     },
     {
         type: 'input',
         name: 'test',
-        message: 'Add your testing instructions:'
+        message: 'Add your testing instructions:',
+        when: function (ans) {
+            return ans.test;
+        },
     },
     {
         type: 'rawlist',
         name: 'license',
         message: 'Choose an open source license:',
-        choices: ['example1', 'example2'],
+        choices: ['Apache 2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'GNU GPLv2.0', 'GNU GPLv3.0', 'MIT', 'Mozilla Public 2.0'],
     },
 ]
 
