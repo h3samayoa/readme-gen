@@ -7,7 +7,7 @@ const intro = [
         type: 'confirm',
         prefix: '\b',
         name: 'intro',
-        message: chalk.magenta(`Welcome to my ReadMe Generator`)
+        message: chalk.magenta(`Welcome to my README Generator`)
     },
 ];
 
@@ -79,5 +79,22 @@ const questions = [
         message: 'Choose an open source license:',
         choices: ['example1', 'example2'],
     },
-
 ]
+
+const writeToFile = (fileName, data) => {
+    fs.writeFile(fileName, data, (err) => {
+        err ? console.log(err) : console.log(successMsg)
+    });
+}
+
+const start = async() => {
+    try {
+        await inquirer.prompt(intro);
+        const data = await inquirer.prompt(questions);
+        writeToFile('./output/README.md');
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+start();
