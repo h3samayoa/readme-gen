@@ -72,7 +72,7 @@ const questions = [
     },
     {
         type: 'confirm',
-        name: 'contribConf',
+        name: 'contrib',
         message: 'Do you want to add contribution instructions?'
     },
     {
