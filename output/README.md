@@ -31,7 +31,7 @@ npm test
 Licensed under the Apache 2.0 License. Copyright © 2021
 
 ## Questions
-*Contact me here for any questions 
+*Contact me here for any questions* 
 
 Github: [@h3samayoa](https://github.com/h3samayoa/)
 

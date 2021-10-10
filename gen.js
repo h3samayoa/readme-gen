@@ -72,7 +72,7 @@ if (data.test) {
 
 readme += `\n## License \nLicensed under the ${data.license} License. Copyright \u00A9 ${year.getFullYear()}\n`;
 
-readme += `\n## Questions\n*Contact me here for any questions \n\nGithub: [@${data.github}](https://github.com/${data.github}/)\n\nEmail: [${data.email}](mailto:${data.email})\n`
+readme += `\n## Questions\n*Contact me here for any questions* \n\nGithub: [@${data.github}](https://github.com/${data.github}/)\n\nEmail: [${data.email}](mailto:${data.email})\n`
 
 return readme;
 }
